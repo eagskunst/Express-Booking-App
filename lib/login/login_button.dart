@@ -1,3 +1,4 @@
+import 'package:express_booking_app/book_ticket/book_ticket_screen.dart';
 import 'package:flutter/material.dart';
 
 class LoginButton extends StatelessWidget {
@@ -34,27 +35,32 @@ class LoginButton extends StatelessWidget {
           ),
         ]
       ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          image == null ? Icon(Icons.person_add, color: Colors.white, size: 30):Image(image: image,height: 30, width: 30),
-          Container(
-            margin: EdgeInsets.only(
-              left: 60.0
-            ),
-            child: Text(
-              text,
-              style: TextStyle(
-                color: textColor,
-                fontSize: 14,
-                fontFamily: "Roboto",
+      child: InkWell(
+        onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context) => BookTicketScreen()));
+        },
+        child:  Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            image == null ? Icon(Icons.person_add, color: Colors.white, size: 30):Image(image: image,height: 30, width: 30),
+            Container(
+              margin: EdgeInsets.only(
+                  left: 60.0
               ),
-              textAlign: TextAlign.center,
-            ),
-          )
-        ],
-      ),
+              child: Text(
+                text,
+                style: TextStyle(
+                  color: textColor,
+                  fontSize: 14,
+                  fontFamily: "Roboto",
+                ),
+                textAlign: TextAlign.center,
+              ),
+            )
+          ],
+        ),
+      )
     );
   }
 }

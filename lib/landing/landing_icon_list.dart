@@ -10,6 +10,7 @@ class LandingIconsList extends StatelessWidget {
   final icon4 = Icons.flight_takeoff;
   final icon5 = Icons.movie;
   final icon6 = Icons.tram;
+
   @override
   Widget build(BuildContext context) {
     final row1 = Row(

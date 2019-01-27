@@ -13,7 +13,7 @@ class LandingIcon extends StatelessWidget {
       width: 45.0,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: Colors.indigoAccent
+        color: Color(0xff5E5AD5)
       ),
       child: Center(
         child: Icon(

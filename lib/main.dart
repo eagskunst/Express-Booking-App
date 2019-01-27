@@ -1,4 +1,4 @@
-import 'package:express_booking_app/landing.dart';
+import 'package:express_booking_app/landing/landing.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Express Booking App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.white
       ),
       home: Landing()
     );

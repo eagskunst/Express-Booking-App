@@ -1,4 +1,5 @@
-import 'package:express_booking_app/landing_icon.dart';
+import 'package:express_booking_app/app_icon.dart';
+import 'package:express_booking_app/landing/landing_icon.dart';
 import 'package:flutter/material.dart';
 
 class LandingIconsList extends StatelessWidget {
@@ -22,16 +23,7 @@ class LandingIconsList extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         LandingIcon(icon3),
-        Icon(
-          Icons.view_comfy,
-          color: Colors.white,
-          size: 20,
-        ),
-        Icon(
-          Icons.view_comfy,
-          color: Colors.white,
-          size: 20,
-        ),
+        AppIcon(14, Colors.white),
         LandingIcon(icon4)
       ],
     );

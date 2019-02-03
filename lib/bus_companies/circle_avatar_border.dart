@@ -10,6 +10,7 @@ class AvatarWithBorder extends StatelessWidget {
       height: 50,
       padding: EdgeInsets.all(0),
       margin: EdgeInsets.only(
+        top: 35,
         right: 10
       ),
       decoration: BoxDecoration(

@@ -10,9 +10,6 @@ class HeaderBar extends StatelessWidget {
       height: 250,
       color: Color(0xFF3834AF),
       child: Container(
-        margin: EdgeInsets.only(
-            top: 35
-        ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,

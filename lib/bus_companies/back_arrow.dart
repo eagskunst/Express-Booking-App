@@ -5,7 +5,7 @@ class BackArrow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(
-        top: 10,
+        top: 40,
         left: 10.0,
       ),
       child: InkWell(

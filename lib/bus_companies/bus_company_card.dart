@@ -1,3 +1,4 @@
+import 'package:express_booking_app/buy_ticket/buy_ticket_screen.dart';
 import 'package:flutter/material.dart';
 
 class BusCompanyCard extends StatelessWidget {
@@ -41,7 +42,9 @@ class BusCompanyCard extends StatelessWidget {
         ]
       ),
       child: InkWell(
-        onTap: ()=>{},
+        onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context) => BuyTicketScreen(logo)));
+        },
         child: Center(
           child: Image.asset(
             logo,

@@ -52,7 +52,7 @@ class FootButtons extends StatefulWidget {
 }
 
 class FootButtonsState extends State<FootButtons> {
-  var acOn = true;
+  var acOn = false;
 
   @override
   Widget build(BuildContext context) {

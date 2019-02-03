@@ -12,7 +12,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.white
       ),
-      home: Landing()
+      home: Landing(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

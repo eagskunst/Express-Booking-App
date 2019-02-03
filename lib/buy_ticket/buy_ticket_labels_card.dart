@@ -68,6 +68,23 @@ class BuyTicketCard extends StatelessWidget {
       ),
     );
 
+    final searchButton = Container(
+      width: 350,
+      height: 50,
+      child: FlatButton(
+        onPressed: ()=>{},
+        color: Color(0xAA3834AF),
+        child: Text(
+          'SEARCH BUSES',
+          textAlign: TextAlign.center,
+        ),
+        textColor: Colors.white,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(4)
+        ),
+        padding: EdgeInsets.all(10),
+      ),
+    );
 
     final labelsColum = Column(
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -75,6 +92,7 @@ class BuyTicketCard extends StatelessWidget {
         fromLabel,
         toLabel,
         TravelDate(),
+        searchButton,
       ],
     );
 
@@ -85,7 +103,7 @@ class BuyTicketCard extends StatelessWidget {
         left: 20,
         right: 20
       ),
-      height: 330,
+      height: 310,
       padding: EdgeInsets.all(20),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
